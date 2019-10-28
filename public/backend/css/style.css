@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300,700,900,400italic");
+
+body {
+    font-size: 14px;
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #666;
+    background: #f2f2f2;
+    /*-webkit-text-size-adjust: 100%;*/
+    -moz-osx-font-smoothing: grayscale;
+    /*-webkit-font-smoothing: antialiased;*/ }
+.main-header .logo .logo-lg {
+    display: block;
+}
+a {
+    color: #343a40;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover {
+    text-decoration: none;
+    color: blue;
+}
+.dropdown user user-menu a{
+    color: #343a40;
+    text-decoration: none;
+    background-color: transparent;
+}
+/* ------------ Sidenav CSS ------------- */
+#sidenav {
+    width: 300px;
+    height:100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    background: #101010;
+    float: left;
+}
+
+#sidenav.open {
+    left: -300px; }
+#sidenav .logo {
+    width: 100%;
+    padding: 3px 35px;
+    background-color: #367fa9;
+    color: white;
+    display: block; }
+#sidenav .logo a {
+    color: #dadada;
+    font-size: 32px; }
+#sidenav .logo a.nav-icon {
+    display: none; }
+#sidenav .menu {
+    position: static; }
+#sidenav .menu ul {
+    list-style: none;
+    width: 300px;
+    background: #101010;
+    padding: 10% 0;
+    margin: 0; }
+#sidenav .menu ul li {
+    padding: 0px 14%; }
+#sidenav .menu ul li.active {
+    border-left: solid 4px red; }
+#sidenav .menu ul li a {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+}
+#sidenav .menu ul li a:hover {
+    color: rgba(255, 255, 255, 0.5); }
+#sidenav .menu ul li a.logout:hover {
+    color: red; }
+#sidenav .menu ul li ul {
+    list-style: none;
+    padding: 0px 0px;
+    border-top: solid 1px rgba(255, 255, 255, 0.08);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.08); }
+#sidenav .menu ul li ul li {
+    padding: 6px 15px; }
+#sidenav .menu ul li ul li a {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7); }
+.user-panel{
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    #sidenav {
+        width: 100%;
+        height: 60px;
+        background: none; }
+    #sidenav .logo {
+        padding: 10px 20px; }
+    #sidenav .logo a {
+        font-size: 20px; }
+    #sidenav .logo a.nav-icon {
+        display: inline; }
+    #sidenav .menu {
+        display: none; }
+    #sidenav .menu.open {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        display: block !important; }
+    #sidenav .menu ul {
+        border-top: solid 1px #333; }
+    #sidenav .menu ul li {
+        padding: 6px 5%; } }
+.user-menu{
+    padding: 13px 45px;
+    background: rgba(0,0,0,0.1);
+    color: #fff;
+}
+.user-menu .dropdown-toggle:after{
+    content: none !important;
+}
+.user-menu:hover{
+    background: #23527c;
+    color: white;
+}
+.dropdown-toggle .dropdown-item:hover{
+    background: #23527c;
+    color: white;
+}
+.navbar .sidebar-toggle:hover {
+    color: #0f6674;
+    background-color:red;
+}
+.openNav {
+    transition-duration: 0.5s;
+    background-color: #14B9FF;
+    width: 50px;
+    height: 50px;
+}
+.openNav:hover {
+    cursor: pointer;
+}
+.openNav a.fa-bars:hover{
+    background-color: #0f192a;
+}
+#sidle-menu li{
+    width: auto;
+    line-height: 50px;
+    border-bottom: 1px solid #e8e8e8;
+}
+#sidle-menu ul li{
+    position: relative;
+}
+#sidle-menu a{
+    text-decoration: none;
+    color: white;
+    display:block;
+}
+#sidle-menu li:hover {
+    background-color: grey;
+}
+.submenu{
+    z-index: 1;
+    left: 300px;
+}
+.submenu li:hover {
+    background-color: grey;
+}
+#sidle-menu .submenu {
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    display: none;
+}
+#sidle-menu li:hover .submenu{
+    display: block;
+}
+h3{
+    font-family: "Times New Roman";
+}
+
+#img_contain{
+    margin-top:10px;
+}
+#file-input{
+    margin-left:7px;
+    padding:4px;
+    background-color:gray;
+}
+#image-preview{
+    height:143px;
+    width:auto;
+    display:block;
+    padding:5px;
+}
+
+
+
+/*# sourceMappingURL=app.main.css.map */
